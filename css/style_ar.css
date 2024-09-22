@@ -1,0 +1,99 @@
+* {
+    direction: rtl;
+}
+
+.owl-stage-outer {
+    direction: ltr;
+}
+
+input {
+    direction: rtl !important;
+}
+
+.display-1 {
+    font-size: 4rem !important;
+}
+
+.link-animated a:hover {
+    padding-right: 10px;
+}
+
+.bi-arrow-right {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    margin-right: unset;
+    margin-left: 25px;
+}
+
+.whatsapp {
+    right: unset;
+    left: 45px !important;
+}
+.back-to-top {
+    right: unset;
+    left: 45px !important;
+}
+
+.section-title.toRight::before {
+    left: unset;
+    right: 0;
+}
+.section-title.toRight::after {
+    animation-name: section-title-run-right;
+}
+
+.section-title.toRight.section-title-sm::after {
+    -webkit-animation: section-title-run-sm 5s infinite linear;
+    animation: section-title-run-sm 5s infinite linear;
+}
+
+@-webkit-keyframes section-title-run-right {
+    0% {right: 0; } 50% { right : 145px; } 100% { right: 0; }
+}
+
+@-webkit-keyframes section-title-run-sm {
+    0% {right: 0; } 50% { right : 85px; } 100% { right: 0; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse {
+        margin-top: 8px;
+    }
+    
+    .lang {
+        margin-top: 8px;
+        margin-right: -0.8rem !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .display-1 {
+        font-size: 2.5rem !important;
+        margin-bottom: 25px;
+    }
+    .carousel-control-prev {
+        right: 35%;
+        transform: translateX(-50%);
+    }
+    .carousel-control-next {
+        left: 39%;
+        transform: translateX(-50%);
+    }
+    .lang {
+        margin-left: unset !important;
+        margin-top: 8px;
+        margin-right: -0.6rem !important;
+    }
+
+    .whatsapp {
+        right: unset !important;
+        left: 25px !important;
+    }
+    .back-to-top {
+        right: unset !important;
+        left: 25px !important;
+    }
+}
