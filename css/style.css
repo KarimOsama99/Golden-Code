@@ -11,10 +11,10 @@ body {
 
 /********** Template CSS **********/
 :root {
-    --primary: rgb(255, 187, 0);
+    --primary: #e29726;
     --secondary: #34AD54;
     --light: #EEF9FF;
-    --dark: #091E3E;
+    --dark: #13182c;
 }
 
 
@@ -155,6 +155,29 @@ h6,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     color: var(--primary);
+}
+
+.navbar-dark .logo {
+    /* position: absolute;
+    top: 0;
+    height: 100%; */
+    width: 180px;
+}
+
+.flogo {
+    height: 100%;
+    width: 180px;
+}
+
+@media (max-width: 991px) {
+    .navbar-dark .logo {
+        position: relative;
+        height: 100%;
+        width: 150px;
+    }
+    .flogo {
+        width: 150px;
+    }
 }
 
 .navbar-dark .navbar-brand h1 {
@@ -532,6 +555,7 @@ a {
     right: 45px;
     bottom: 50px;
     border-radius: 50% !important;
+    border: 1px solid var(--dark);
     z-index: 99;
 }
 
@@ -579,4 +603,9 @@ a {
     .footer-about {
         margin-bottom: -75px;
     }
+}
+
+.footer-about p {
+    color: var(--dark);
+    font-weight: 500;
 }
